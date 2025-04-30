@@ -1,0 +1,55 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+#container{
+    border: 2px solid black;
+    width: 80vh;
+    height: 70vh;
+    
+}
+
+#display{
+    padding-bottom: 40px;
+    font-size: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#topOper{
+    padding: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    
+}
+
+#topOper > button {
+    width: 20vh;
+    font-size: 35px
+}
+
+#sideOper {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+    padding-right: 20px
+    
+}
+
+#sideOper > button{
+    width: 170px;
+    font-size: 35px;
+}
+
+#row > button{
+    width: 10vh;
+    height: auto;
+}
