@@ -30,17 +30,17 @@ body {
     border-bottom: 2px solid black;
 }
 
-#row {
+.row {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
 }
 
-#row:last-child {
+.row:last-child {
     justify-content: space-between;
 }
 
-#row > button {
+.row > button {
     flex: 1;
     margin: 5px;
     height: 60px;
@@ -52,14 +52,14 @@ body {
     transition: background-color 0.2s;
 }
 
-#row > button:hover {
-    background-color: #dcdcdc;
+.row > button:hover {
+    background-color: #e0a1a1;
 }
 
-#row > button:active {
+.row > button:active {
     background-color: #bcbcbc;
 }
 
-#row > button:last-child {
+.row > button:last-child {
     flex: 2; /* Make the "0" button wider */
 }
