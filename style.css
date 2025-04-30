@@ -1,55 +1,65 @@
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
 }
 
-#container{
-    border: 2px solid black;
-    width: 80vh;
-    height: 70vh;
-    
-}
-
-#display{
-    padding-bottom: 40px;
-    font-size: 50px;
+#container {
     display: flex;
-    justify-content: flex-end;
-}
-
-#topOper{
-    padding: 20px;
-    padding-bottom: 40px;
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    
-}
-
-#topOper > button {
-    width: 20vh;
-    font-size: 35px
-}
-
-#sideOper {
-    display: flex;
-    justify-content: flex-end;
     flex-direction: column;
-    align-items: flex-end;
-    gap: 40px;
-    padding-right: 20px
-    
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
 }
 
-#sideOper > button{
-    width: 170px;
-    font-size: 35px;
+#display {
+    height: 80px;
+    background-color: #eaeaea;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    border-bottom: 2px solid black;
 }
 
-#row > button{
-    width: 10vh;
-    height: auto;
+#row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+#row:last-child {
+    justify-content: space-between;
+}
+
+#row > button {
+    flex: 1;
+    margin: 5px;
+    height: 60px;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#row > button:hover {
+    background-color: #dcdcdc;
+}
+
+#row > button:active {
+    background-color: #bcbcbc;
+}
+
+#row > button:last-child {
+    flex: 2; /* Make the "0" button wider */
 }
